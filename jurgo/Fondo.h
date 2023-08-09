@@ -14,7 +14,7 @@ private:
 	
 public:
 	Fondo(const std::string& imageFondo);
-	void mostrar(sf::RenderWindow* window);
+	void mostrar(sf::RenderWindow* ventana);
 	
 
 };

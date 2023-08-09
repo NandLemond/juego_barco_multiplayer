@@ -134,8 +134,8 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="BarcoPlayer1.cpp" />
     <ClCompile Include="BarcoPlayer2.cpp" />
+    <ClCompile Include="BarcoPlayer1.cpp" />
     <ClCompile Include="Fondo.cpp" />
     <ClCompile Include="Game.cpp" />
     <ClCompile Include="ItemDanio.cpp" />
@@ -143,13 +143,12 @@
     <ClCompile Include="ItemVida.cpp" />
     <ClCompile Include="jurgo.cpp" />
     <ClCompile Include="Barco.cpp" />
-    <ClCompile Include="Items.cpp" />
+    <ClCompile Include="Item.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Barco.h" />
-    <ClInclude Include="BarcoPlayer1.h" />
     <ClInclude Include="BarcoPlayer2.h" />
-    <ClInclude Include="boton_jugar_de_nuevo.h" />
+    <ClInclude Include="BarcoPlayer1.h" />
     <ClInclude Include="Fondo.h" />
     <ClInclude Include="Game.h" />
     <ClInclude Include="Item.h" />
@@ -159,8 +158,6 @@
   </ItemGroup>
   <ItemGroup>
     <Image Include="..\..\..\Users\ASUS\Downloads\Barco.png" />
-    <Image Include="..\..\..\Users\ASUS\Pictures\BarcoDerecha.png" />
-    <Image Include="..\..\..\Users\ASUS\Pictures\BarcoIzquierda.png" />
     <Image Include="Image.jpg" />
     <Image Include="Image1.png" />
   </ItemGroup>

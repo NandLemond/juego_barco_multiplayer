@@ -24,16 +24,16 @@
     <ClCompile Include="Fondo.cpp">
       <Filter>Archivos de origen</Filter>
     </ClCompile>
-    <ClCompile Include="BarcoPlayer1.cpp">
+    <ClCompile Include="BarcoPlayer2.cpp">
       <Filter>Archivos de origen</Filter>
     </ClCompile>
-    <ClCompile Include="BarcoPlayer2.cpp">
+    <ClCompile Include="BarcoPlayer1.cpp">
       <Filter>Archivos de origen</Filter>
     </ClCompile>
     <ClCompile Include="Game.cpp">
       <Filter>Archivos de origen</Filter>
     </ClCompile>
-    <ClCompile Include="Items.cpp">
+    <ClCompile Include="Item.cpp">
       <Filter>Archivos de origen</Filter>
     </ClCompile>
     <ClCompile Include="ItemDanio.cpp">
@@ -56,10 +56,10 @@
     <ClInclude Include="Fondo.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
-    <ClInclude Include="BarcoPlayer1.h">
+    <ClInclude Include="BarcoPlayer2.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
-    <ClInclude Include="BarcoPlayer2.h">
+    <ClInclude Include="BarcoPlayer1.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
     <ClInclude Include="Item.h">
@@ -74,18 +74,9 @@
     <ClInclude Include="ItemVida.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
-    <ClInclude Include="boton_jugar_de_nuevo.h">
-      <Filter>Archivos de encabezado</Filter>
-    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Image Include="..\..\..\Users\ASUS\Downloads\Barco.png">
-      <Filter>Archivos de recursos</Filter>
-    </Image>
-    <Image Include="..\..\..\Users\ASUS\Pictures\BarcoIzquierda.png">
-      <Filter>Archivos de recursos</Filter>
-    </Image>
-    <Image Include="..\..\..\Users\ASUS\Pictures\BarcoDerecha.png">
       <Filter>Archivos de recursos</Filter>
     </Image>
     <Image Include="Image1.png">

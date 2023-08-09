@@ -14,24 +14,31 @@
 #include "BarcoPlayer1.h"
 #include "BarcoPlayer2.h"
 #include <vector>
+#include <thread>
+#include <chrono>
+
 
 class Game
 {
 private:
-	sf::VideoMode videoMode;
-	sf::RenderWindow* window;
+	sf::VideoMode dimensiones_ventana;
+	sf::RenderWindow* ventana;
 	bool fin_del_juego;
 	sf::Event sfmlEvent;
 	Fondo* fondo;
+	enum class GameState
+	{
+		Menu,
+		Running,
+		GameOver
+	};
 
-	
+	GameState estado_actual;
+	std::shared_ptr<Barco> jugador_1;
+	std::shared_ptr<Barco> jugador_2;
 
-
-	std::shared_ptr<Barco> player1;
-	std::shared_ptr<Barco> player2;
-
-	int points;
-	int point2;
+	int puntos_J1;
+	int puntos_J2;
 	sf::Font fuente;
 	sf::Text guiText;
 	sf::Text fin_del_juego_texto;
@@ -60,15 +67,15 @@ public:
 
 	
 	const bool running() const;
-	void pollEvents();
-
-	void spawnSwagBalls();
+	void eventos_ventana();
+	void mostrar_menu();
+	void Generador_de_items();
 	//const int randBallType() const;
 	void updatePlayer();
-	void updateCollision();
+	void Colision_bolitas();
 	void updateGui();
 	void update();
 
-	void renderGui(sf::RenderTarget* target);
+	void mostrar_texto(sf::RenderTarget* target);
 	void render();
 };

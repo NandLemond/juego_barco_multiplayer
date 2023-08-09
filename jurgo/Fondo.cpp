@@ -10,6 +10,6 @@ Fondo::Fondo(const std::string& imagenFondo) {
     spriteFondo.setTexture(texturaFondo);
 }
 
-void Fondo::mostrar(sf::RenderWindow* window) {
-    window->draw(spriteFondo);
+void Fondo::mostrar(sf::RenderWindow* ventana) {
+    ventana->draw(spriteFondo);
 }

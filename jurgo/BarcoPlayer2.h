@@ -1,20 +1,20 @@
 #pragma once
 #include "Barco.h"
 
-class BarcoPlayer2 :public Barco {
+class BarcoPlayer2:public Barco{
 protected:
-
+	
 
 
 	//void iniciaVariables();
-
+	
 
 
 public:
-	BarcoPlayer2(float x = 200.f, float y = 400.f);
+	BarcoPlayer2(float x = 1700.f, float y = 400.f);
 	virtual ~BarcoPlayer2() {}
 	virtual void iniImage() override;
-	void inicializarImagenBarco() override;
+	 virtual void inicializarImagenBarco() override;
 	//const sf::Sprite& getSprite() const;
 	//const int& getVida() const;
 	//const int& getVidaMax() const;
