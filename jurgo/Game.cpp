@@ -263,8 +263,12 @@ void Game::Colision_bolitas()
 				puntos_J1++;
 				break;
 			case 1: // BolaDanio
-				jugador_1->recibirDaño(1);
-				this->puntos_J1 -= 2;
+				using namespace std::chrono_literals;
+				std::this_thread::sleep_for(500ms);
+			jugador_1->recibirDaño(1);
+				if (puntos_J1 > 0) {
+					puntos_J1 = puntos_J1 - 1;
+				}
 				break;
 			case 2: // BolaVida
 				jugador_1->ganarSalud(1);
@@ -284,9 +288,12 @@ void Game::Colision_bolitas()
 				puntos_J2++;
 				break;
 			case 1: // BolaDanio
+				using namespace std::chrono_literals;
+				std::this_thread::sleep_for(500ms);
 				jugador_2->recibirDaño(1);
-				this->puntos_J2 -= 2;
-
+				if (puntos_J2 > 0) {
+					puntos_J2 = puntos_J2 - 1;
+				}
 				break;
 			case 2: // BolaVida
 				jugador_2->ganarSalud(1);
